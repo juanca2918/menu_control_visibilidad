@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vista Tree de Configuración de Usuario -->
+    <record id="view_user_visibility_config_tree" model="ir.ui.view">
+        <field name="name">user.visibility.config.tree</field>
+        <field name="model">user.visibility.config</field>
+        <field name="arch" type="xml">
+            <list string="Configuración de Visibilidad">
+                <field name="user_id"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista Form de Configuración de Usuario -->
+    <record id="view_user_visibility_config_form" model="ir.ui.view">
+        <field name="name">user.visibility.config.form</field>
+        <field name="model">user.visibility.config</field>
+        <field name="arch" type="xml">
+            <form string="Configuración de Visibilidad de Menús">
+                <header>
+                    <button name="action_quick_menu_setup" 
+                            string="⚡ Cargar Todos los Menús" 
+                            type="object" 
+                            class="btn-primary"
+                            groups="base.group_system"
+                            help="Carga automáticamente todos los menús del sistema (Solo Administradores)"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="user_id" placeholder="Seleccionar Usuario" options="{'no_create': True}" required="1"/>
+                        </h1>
+                    </div>
+                    
+                    <group>
+                        <group>
+                            <field name="active" widget="boolean_toggle"/>
+                        </group>
+                        <group>
+                            <field name="filter_by_creator_global" widget="boolean_toggle" 
+                                   string="📄 Solo Mis Documentos (Global)"
+                                   help="Si se activa, TODOS los menús mostrarán solo documentos creados o asignados al usuario"/>
+                        </group>
+                    </group>
+                    
+                    <separator string="Menús Visibles para este Usuario"/>
+                    <div class="alert alert-info" role="alert">
+                        <strong>ℹ️ Control de Permisos por Menú:</strong> Configura visibilidad y permisos para cada menú. Los administradores pueden usar "⚡ Cargar Todos los Menús" para importar la lista completa.
+                        <br/>
+                        <strong>📄 Solo Mis Documentos:</strong> Puedes activarlo globalmente arriba (para todos los menús) o individualmente por cada menú en la columna "📄 Solo Mis Docs".
+                    </div>
+                    <field name="menu_visibility_ids" context="{'default_config_id': id}" nolabel="1" options="{'create': False, 'delete': False}">
+                        <list string="Configuración de Menús" 
+                              editable="bottom"
+                              default_order="menu_path"
+                              create="false"
+                              delete="false">
+                            <field name="config_id" column_invisible="1"/>
+                            <field name="user_id" column_invisible="1"/>
+                            <field name="menu_path" column_invisible="1"/>
+                            <field name="menu_complete_name" string="Menú / Opción" readonly="1" required="1"/>
+                            <field name="menu_id" required="1" column_invisible="1"/>
+                            <field name="parent_menu_id" column_invisible="1"/>
+                            <field name="visible" string="👁️ Ver" widget="boolean_toggle"/>
+                            <field name="can_create" string="➕ Crear" widget="boolean_toggle"/>
+                            <field name="can_write" string="✏️ Editar" widget="boolean_toggle"/>
+                            <field name="can_unlink" string="🗑️ Eliminar" widget="boolean_toggle"/>
+                            <field name="filter_by_creator" string="📄 Solo Mis Docs" widget="boolean_toggle"/>
+                            <field name="model_name" string="Modelo" readonly="1"/>
+                            <field name="active" column_invisible="1"/>
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista Kanban de Configuración de Usuario -->
+    <record id="view_user_visibility_config_kanban" model="ir.ui.view">
+        <field name="name">user.visibility.config.kanban</field>
+        <field name="model">user.visibility.config</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="user_id"/>
+                <field name="active"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_image me-2">
+                                    <img t-att-src="kanban_image('res.users', 'image_128', record.user_id.raw_value)"
+                                         class="rounded-circle"
+                                         style="width:40px;height:40px;object-fit:cover;"
+                                         alt="Avatar"/>
+                                </div>
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="user_id"/>
+                                    </strong>
+                                    <span t-if="!record.active.raw_value" class="badge text-bg-danger ms-1">Inactivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Vista Search de Configuración de Usuario -->
+    <record id="view_user_visibility_config_search" model="ir.ui.view">
+        <field name="name">user.visibility.config.search</field>
+        <field name="model">user.visibility.config</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Configuración">
+                <field name="user_id"/>
+                <filter string="Activos" name="active" domain="[('active', '=', True)]"/>
+                <filter string="Inactivos" name="inactive" domain="[('active', '=', False)]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Acción de Ventana -->
+    <record id="action_user_visibility_config" model="ir.actions.act_window">
+        <field name="name">Configuración de Usuarios</field>
+        <field name="res_model">user.visibility.config</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="context">{'search_default_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear configuración para un usuario
+            </p>
+            <p>
+                Configure la visibilidad de menús y campos para cada usuario de manera centralizada.
+                Puede usar checkboxes simples para habilitar o deshabilitar acceso a menús específicos
+                y campos en diferentes modelos.
+            </p>
+            <p>
+                <strong>Ejemplos de uso:</strong>
+                <ul>
+                    <li>Ocultar el menú de Clientes para usuarios de almacén</li>
+                    <li>Mostrar el campo Ubicación en Productos solo para gerentes</li>
+                    <li>Limitar acceso a información sensible sin crear nuevos grupos</li>
+                </ul>
+            </p>
+        </field>
+    </record>
+
+</odoo>

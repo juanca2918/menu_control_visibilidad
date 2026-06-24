@@ -1,0 +1,412 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* menu_control_visibilidad
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: menu_control_visibilidad
+msgid "📄 Solo Mis Documentos (Global)"
+msgstr "📄 Solo Mis Documentos (Global)"
+
+#. module: menu_control_visibilidad
+msgid "Activo"
+msgstr "Activo"
+
+#. module: menu_control_visibilidad
+msgid "Campo"
+msgstr "Campo"
+
+#. module: menu_control_visibilidad
+msgid "Configuración"
+msgstr "Configuración"
+
+#. module: menu_control_visibilidad
+msgid "ID de Acción"
+msgstr "ID de Acción"
+
+#. module: menu_control_visibilidad
+msgid "Menú"
+msgstr "Menú"
+
+#. module: menu_control_visibilidad
+msgid "Menú Padre"
+msgstr "Menú Padre"
+
+#. module: menu_control_visibilidad
+msgid "Modelo"
+msgstr "Modelo"
+
+#. module: menu_control_visibilidad
+msgid "Notas"
+msgstr "Notas"
+
+#. module: menu_control_visibilidad
+msgid "Puede Crear"
+msgstr "Puede Crear"
+
+#. module: menu_control_visibilidad
+msgid "Puede Editar"
+msgstr "Puede Editar"
+
+#. module: menu_control_visibilidad
+msgid "Puede Eliminar"
+msgstr "Puede Eliminar"
+
+#. module: menu_control_visibilidad
+msgid "Ruta del Menú"
+msgstr "Ruta del Menú"
+
+#. module: menu_control_visibilidad
+msgid "Ruta de Ordenamiento"
+msgstr "Ruta de Ordenamiento"
+
+#. module: menu_control_visibilidad
+msgid "Secuencia"
+msgstr "Secuencia"
+
+#. module: menu_control_visibilidad
+msgid "Solo Mis Documentos"
+msgstr "Solo Mis Documentos"
+
+#. module: menu_control_visibilidad
+msgid "Usuario"
+msgstr "Usuario"
+
+#. module: menu_control_visibilidad
+msgid "Visibilidad de Campos"
+msgstr "Visibilidad de Campos"
+
+#. module: menu_control_visibilidad
+msgid "Visibilidad de Menús"
+msgstr "Visibilidad de Menús"
+
+#. module: menu_control_visibilidad
+msgid "Visible"
+msgstr "Visible"
+
+#. module: menu_control_visibilidad
+msgid "Campo a mostrar u ocultar"
+msgstr "Campo a mostrar u ocultar"
+
+#. module: menu_control_visibilidad
+msgid "Configura qué campos puede ver este usuario en diferentes modelos"
+msgstr "Configura qué campos puede ver este usuario en diferentes modelos"
+
+#. module: menu_control_visibilidad
+msgid "Configura qué menús puede ver este usuario"
+msgstr "Configura qué menús puede ver este usuario"
+
+#. module: menu_control_visibilidad
+msgid "ID de la acción (ir.actions.act_window) asociada al menú"
+msgstr "ID de la acción (ir.actions.act_window) asociada al menú"
+
+#. module: menu_control_visibilidad
+msgid "Modelo asociado al menú (si existe)"
+msgstr "Modelo asociado al menú (si existe)"
+
+#. module: menu_control_visibilidad
+msgid "Modelo donde se encuentra el campo (ej: product.product, res.partner)"
+msgstr "Modelo donde se encuentra el campo (ej: product.product, res.partner)"
+
+#. module: menu_control_visibilidad
+msgid "Notas adicionales sobre la configuración de este usuario"
+msgstr "Notas adicionales sobre la configuración de este usuario"
+
+#. module: menu_control_visibilidad
+msgid "Permite crear nuevos registros desde este menú"
+msgstr "Permite crear nuevos registros desde este menú"
+
+#. module: menu_control_visibilidad
+msgid "Permite editar registros existentes desde este menú"
+msgstr "Permite editar registros existentes desde este menú"
+
+#. module: menu_control_visibilidad
+msgid "Permite eliminar registros desde este menú"
+msgstr "Permite eliminar registros desde este menú"
+
+#. module: menu_control_visibilidad
+msgid "Ruta completa del menú con jerarquía"
+msgstr "Ruta completa del menú con jerarquía"
+
+#. module: menu_control_visibilidad
+msgid "Ruta jerárquica para ordenamiento"
+msgstr "Ruta jerárquica para ordenamiento"
+
+#. module: menu_control_visibilidad
+msgid "Si está marcado, el usuario puede ver este campo"
+msgstr "Si está marcado, el usuario puede ver este campo"
+
+#. module: menu_control_visibilidad
+msgid "Si está marcado, el usuario puede ver este menú"
+msgstr "Si está marcado, el usuario puede ver este menú"
+
+#. module: menu_control_visibilidad
+msgid "Si está marcado, el usuario solo verá los registros que él creó"
+msgstr "Si está marcado, el usuario solo verá los registros que él creó"
+
+#. module: menu_control_visibilidad
+msgid ""
+"Si se activa, TODOS los menús mostrarán solo documentos creados/asignados al "
+"usuario. "
+msgstr ""
+"Si se activa, TODOS los menús mostrarán solo documentos creados/asignados al "
+"usuario. "
+
+#. module: menu_control_visibilidad
+msgid ""
+"Si se activa, TODOS los menús mostrarán solo documentos creados o asignados "
+"al usuario"
+msgstr ""
+"Si se activa, TODOS los menús mostrarán solo documentos creados o asignados "
+"al usuario"
+
+#. module: menu_control_visibilidad
+msgid "Carga automáticamente todos los menús del sistema (Solo Administradores)"
+msgstr "Carga automáticamente todos los menús del sistema (Solo Administradores)"
+
+#. module: menu_control_visibilidad
+msgid "Configurar qué menús y permisos tiene este usuario"
+msgstr "Configurar qué menús y permisos tiene este usuario"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Permisos"
+msgstr "Configuración de Permisos"
+
+#. module: menu_control_visibilidad
+msgid "Menú / Opción"
+msgstr "Menú / Opción"
+
+#. module: menu_control_visibilidad
+msgid "✅ Ver"
+msgstr "✅ Ver"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Menú"
+msgstr "Configuración de Menú"
+
+#. module: menu_control_visibilidad
+msgid "Permisos de Operación"
+msgstr "Permisos de Operación"
+
+#. module: menu_control_visibilidad
+msgid "Buscar Configuración de Menús"
+msgstr "Buscar Configuración de Menús"
+
+#. module: menu_control_visibilidad
+msgid "✅ Visibles"
+msgstr "✅ Visibles"
+
+#. module: menu_control_visibilidad
+msgid "❌ Ocultos"
+msgstr "❌ Ocultos"
+
+#. module: menu_control_visibilidad
+msgid "🔵 Menús Principales"
+msgstr "🔵 Menús Principales"
+
+#. module: menu_control_visibilidad
+msgid "📂 Submenús"
+msgstr "📂 Submenús"
+
+#. module: menu_control_visibilidad
+msgid "➕ Con Permiso Crear"
+msgstr "➕ Con Permiso Crear"
+
+#. module: menu_control_visibilidad
+msgid "🚫 Sin Permiso Crear"
+msgstr "🚫 Sin Permiso Crear"
+
+#. module: menu_control_visibilidad
+msgid "✏️ Con Permiso Editar"
+msgstr "✏️ Con Permiso Editar"
+
+#. module: menu_control_visibilidad
+msgid "🚫 Sin Permiso Editar"
+msgstr "🚫 Sin Permiso Editar"
+
+#. module: menu_control_visibilidad
+msgid "🗑️ Con Permiso Eliminar"
+msgstr "🗑️ Con Permiso Eliminar"
+
+#. module: menu_control_visibilidad
+msgid "🚫 Sin Permiso Eliminar"
+msgstr "🚫 Sin Permiso Eliminar"
+
+#. module: menu_control_visibilidad
+msgid "⚡ Activos"
+msgstr "⚡ Activos"
+
+#. module: menu_control_visibilidad
+msgid "⏸️ Inactivos"
+msgstr "⏸️ Inactivos"
+
+#. module: menu_control_visibilidad
+msgid "Agrupar Por"
+msgstr "Agrupar Por"
+
+#. module: menu_control_visibilidad
+msgid "📁 Menú Padre"
+msgstr "📁 Menú Padre"
+
+#. module: menu_control_visibilidad
+msgid "👤 Usuario"
+msgstr "👤 Usuario"
+
+#. module: menu_control_visibilidad
+msgid "📦 Modelo"
+msgstr "📦 Modelo"
+
+#. module: menu_control_visibilidad
+msgid "✅/❌ Visible"
+msgstr "✅/❌ Visible"
+
+#. module: menu_control_visibilidad
+msgid "⚡ Estado"
+msgstr "⚡ Estado"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Permisos por Menú"
+msgstr "Configuración de Permisos por Menú"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Visibilidad"
+msgstr "Configuración de Visibilidad"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Visibilidad de Menús"
+msgstr "Configuración de Visibilidad de Menús"
+
+#. module: menu_control_visibilidad
+msgid "⚡ Cargar Todos los Menús"
+msgstr "⚡ Cargar Todos los Menús"
+
+#. module: menu_control_visibilidad
+msgid "Seleccionar Usuario"
+msgstr "Seleccionar Usuario"
+
+#. module: menu_control_visibilidad
+msgid "Menús Visibles para este Usuario"
+msgstr "Menús Visibles para este Usuario"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Menús"
+msgstr "Configuración de Menús"
+
+#. module: menu_control_visibilidad
+msgid "👁️ Ver"
+msgstr "👁️ Ver"
+
+#. module: menu_control_visibilidad
+msgid "➕ Crear"
+msgstr "➕ Crear"
+
+#. module: menu_control_visibilidad
+msgid "✏️ Editar"
+msgstr "✏️ Editar"
+
+#. module: menu_control_visibilidad
+msgid "🗑️ Eliminar"
+msgstr "🗑️ Eliminar"
+
+#. module: menu_control_visibilidad
+msgid "📄 Solo Mis Docs"
+msgstr "📄 Solo Mis Docs"
+
+#. module: menu_control_visibilidad
+msgid "Buscar Configuración"
+msgstr "Buscar Configuración"
+
+#. module: menu_control_visibilidad
+msgid "Activos"
+msgstr "Activos"
+
+#. module: menu_control_visibilidad
+msgid "Inactivos"
+msgstr "Inactivos"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Usuarios"
+msgstr "Configuración de Usuarios"
+
+#. module: menu_control_visibilidad
+msgid "Configuración de Campo"
+msgstr "Configuración de Campo"
+
+#. module: menu_control_visibilidad
+msgid "Buscar Configuración de Campos"
+msgstr "Buscar Configuración de Campos"
+
+#. module: menu_control_visibilidad
+msgid "Visibles"
+msgstr "Visibles"
+
+#. module: menu_control_visibilidad
+msgid "Ocultos"
+msgstr "Ocultos"
+
+#. module: menu_control_visibilidad
+msgid "Visibilidad de Usuario"
+msgstr "Visibilidad de Usuario"
+
+#. module: menu_control_visibilidad
+msgid "Control de Menús por Usuario"
+msgstr "Control de Menús por Usuario"
+
+#. module: menu_control_visibilidad
+msgid "Control de<br/>Menús"
+msgstr "Control de<br/>Menús"
+
+#. module: menu_control_visibilidad
+msgid "Oculto"
+msgstr "Oculto"
+
+#. module: menu_control_visibilidad
+msgid "Inactivo"
+msgstr "Inactivo"
+
+#. module: menu_control_visibilidad
+msgid "Crear"
+msgstr "Crear"
+
+#. module: menu_control_visibilidad
+msgid "Editar"
+msgstr "Editar"
+
+#. module: menu_control_visibilidad
+msgid "Eliminar"
+msgstr "Eliminar"
+
+#. module: menu_control_visibilidad
+msgid "No tiene permisos para realizar esta operación."
+msgstr "No tiene permisos para realizar esta operación."
+
+#. module: menu_control_visibilidad
+msgid ""
+"❌ PERMISO DENEGADO: No puede %s registros en \"%s\". Contacte al "
+"administrador para solicitar este permiso."
+msgstr ""
+"❌ PERMISO DENEGADO: No puede %s registros en \"%s\". Contacte al "
+"administrador para solicitar este permiso."
+
+#. module: menu_control_visibilidad
+msgid ""
+"❌ ACCESO RESTRINGIDO A PRODUCTOS\n"
+"\n"
+"No tienes permiso para abrir las fichas de productos.\n"
+"Puedes visualizarlos en las listas pero no acceder a los detalles."
+msgstr ""
+"❌ ACCESO RESTRINGIDO A PRODUCTOS\n"
+"\n"
+"No tienes permiso para abrir las fichas de productos.\n"
+"Puedes visualizarlos en las listas pero no acceder a los detalles."

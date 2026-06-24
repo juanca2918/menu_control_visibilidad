@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Botón de acceso rápido a la configuración de visibilidad de menús
+         en el formulario de usuario. Se ubica al lado de los botones
+         Grupos / Accesos / Reglas de la sección oe_button_box. -->
+    <record id="view_res_users_form_menu_visibility" model="ir.ui.view">
+        <field name="name">res.users.form.menu.visibility</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_open_menu_visibility"
+                        type="object"
+                        class="oe_stat_button"
+                        icon="fa-eye"
+                        groups="base.group_system"
+                        help="Configurar qué menús y permisos tiene este usuario">
+                    <span class="o_stat_text">Control de<br/>Menús</span>
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vista Tree de Visibilidad de Campos -->
+    <record id="view_field_visibility_tree" model="ir.ui.view">
+        <field name="name">user.field.visibility.tree</field>
+        <field name="model">user.field.visibility</field>
+        <field name="arch" type="xml">
+            <list string="Visibilidad de Campos" editable="bottom">
+                <field name="user_id" readonly="1"/>
+                <field name="model_id" options="{'no_create': True}"/>
+                <field name="field_id" options="{'no_create': True}"/>
+                <field name="visible" widget="boolean_toggle"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista Form de Visibilidad de Campos -->
+    <record id="view_field_visibility_form" model="ir.ui.view">
+        <field name="name">user.field.visibility.form</field>
+        <field name="model">user.field.visibility</field>
+        <field name="arch" type="xml">
+            <form string="Configuración de Campo">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="user_id" options="{'no_create': True}"/>
+                            <field name="model_id" options="{'no_create': True}"/>
+                            <field name="field_id" options="{'no_create': True}"/>
+                        </group>
+                        <group>
+                            <field name="visible"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista Search de Visibilidad de Campos -->
+    <record id="view_field_visibility_search" model="ir.ui.view">
+        <field name="name">user.field.visibility.search</field>
+        <field name="model">user.field.visibility</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Configuración de Campos">
+                <field name="user_id"/>
+                <field name="model_id"/>
+                <field name="field_id"/>
+                <filter string="Visibles" name="visible" domain="[('visible', '=', True)]"/>
+                <filter string="Ocultos" name="hidden" domain="[('visible', '=', False)]"/>
+                <filter string="Activos" name="active" domain="[('active', '=', True)]"/>
+                <group expand="0" string="Agrupar Por">
+                    <filter string="Usuario" name="group_by_user" context="{'group_by': 'user_id'}"/>
+                    <filter string="Modelo" name="group_by_model" context="{'group_by': 'model_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Acción de Ventana -->
+    <record id="action_field_visibility" model="ir.actions.act_window">
+        <field name="name">Visibilidad de Campos</field>
+        <field name="res_model">user.field.visibility</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear nueva configuración de visibilidad de campo
+            </p>
+            <p>
+                Configure qué campos puede ver cada usuario en diferentes modelos.
+                Por ejemplo, puede ocultar el campo "Ubicación" en productos para ciertos usuarios,
+                o el campo "Precio de Costo" en la vista de productos.
+            </p>
+        </field>
+    </record>
+
+</odoo>

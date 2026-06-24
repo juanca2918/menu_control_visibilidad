@@ -1,0 +1,52 @@
+/* Estilos para vista jerárquica de menús */
+
+/* Aplicar fuente monospace para mantener la indentación y espacios visibles */
+.o_list_table .o_data_cell[name="menu_complete_name"] {
+    font-family: 'Courier New', Consolas, Monaco, 'Lucida Console', monospace;
+    white-space: pre !important;
+    padding-left: 8px !important;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+/* Hacer la columna de menú más ancha para que se vea la jerarquía completa */
+.o_list_table th[data-name="menu_complete_name"],
+.o_list_table td[name="menu_complete_name"] {
+    min-width: 550px !important;
+    max-width: 700px !important;
+}
+
+/* Menús raíz con icono de carpeta - más destacados */
+.o_list_table tbody tr:has(.o_data_cell[name="menu_complete_name"]:contains("📁")) {
+    background-color: #e8f4f8;
+    font-weight: 500;
+}
+
+/* Resaltar filas al pasar el mouse */
+.o_list_table tbody tr:hover {
+    background-color: #e3f2fd !important;
+}
+
+/* Estilo para los toggles - centrados */
+.o_list_table .o_data_cell .o_field_boolean_toggle {
+    justify-content: center;
+}
+
+/* Alternar colores de fila para mejor legibilidad */
+.o_list_table tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+.o_list_table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Espaciado entre filas para mejor legibilidad */
+.o_list_table tbody tr td {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+
+

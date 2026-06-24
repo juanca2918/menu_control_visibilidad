@@ -1,0 +1,167 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Visibilidad de Menús por Usuario</h2>
+        <h3 class="oe_slogan">Visibilidad de menús y control de acceso por usuario — sin código</h3>
+        <div class="oe_span12">
+            <div class="oe_demo oe_picture oe_screenshot" style="margin-bottom: 40px;">
+                <img src="main_screenshot.png" alt="Visibilidad de Menús por Usuario - Imagen principal">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B; margin-top: 64px;">Descripción general</h2>
+        <h3 class="oe_slogan">Controla exactamente qué puede ver y hacer cada usuario en Odoo</h3>
+        <div class="oe_span12 text-justify oe_mt32">
+            <p class="oe_mb32" style="font-size: 16px;">
+                <b>Visibilidad de Menús por Usuario</b> entrega a los administradores un panel central para controlar,
+                por usuario, qué menús son visibles y qué operaciones (Crear, Editar, Eliminar) están permitidas — sin
+                modificar grupos de seguridad, escribir código Python ni crear reglas de registro. Los cambios se
+                aplican <b>al instante</b>, sin reiniciar el servidor.
+            </p>
+            <p style="font-size: 16px;">
+                El módulo usa detección por acción, por lo que los menús que comparten el mismo modelo — como
+                <em>Cotizaciones</em> y <em>Pedidos de Venta</em>, o <em>Facturas</em> y <em>Notas de Crédito</em>
+                (ambos en <code>account.move</code>) — siempre se controlan de forma <b>independiente</b>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Funcionalidades principales</h2>
+        <div class="oe_span4">
+            <div class="text-center">
+                <i class="fa fa-eye fa-4x" style="color: #875A7B;"></i>
+                <h4 class="oe_mt16">Visibilidad de menús por usuario</h4>
+                <p>Muestra u oculta cualquier menú para un usuario específico. Ocultar un menú padre oculta automáticamente todos sus hijos.</p>
+            </div>
+        </div>
+        <div class="oe_span4">
+            <div class="text-center">
+                <i class="fa fa-lock fa-4x" style="color: #875A7B;"></i>
+                <h4 class="oe_mt16">Permisos CRUD independientes</h4>
+                <p>Controla los botones Crear, Editar y Eliminar de forma independiente por menú. Cotizaciones y Pedidos de Venta se gestionan siempre por separado, aunque usen el mismo modelo.</p>
+            </div>
+        </div>
+        <div class="oe_span4">
+            <div class="text-center">
+                <i class="fa fa-filter fa-4x" style="color: #875A7B;"></i>
+                <h4 class="oe_mt16">Filtro "Solo Mis Documentos"</h4>
+                <p>Actívalo por menú o de forma global para restringir las listas a los registros creados por o asignados al usuario actual. Sin sobreescribir dominios.</p>
+            </div>
+        </div>
+        <div class="oe_span4">
+            <div class="text-center">
+                <i class="fa fa-ban fa-4x" style="color: #875A7B;"></i>
+                <h4 class="oe_mt16">Bloqueo de fichas de producto</h4>
+                <p>Impide que los usuarios abran fichas individuales de productos desde cualquier menú, sin desactivar el modelo de producto por completo.</p>
+            </div>
+        </div>
+        <div class="oe_span4">
+            <div class="text-center">
+                <i class="fa fa-bolt fa-4x" style="color: #875A7B;"></i>
+                <h4 class="oe_mt16">Efecto instantáneo</h4>
+                <p>Los cambios de permisos surten efecto de inmediato para el usuario. No se requiere reiniciar el servidor ni limpiar caché manualmente.</p>
+            </div>
+        </div>
+        <div class="oe_span4">
+            <div class="text-center">
+                <i class="fa fa-list fa-4x" style="color: #875A7B;"></i>
+                <h4 class="oe_mt16">Carga masiva de menús</h4>
+                <p>Un botón (solo admin) importa todos los menús del sistema en la configuración del usuario en un clic. Empieza a configurar en segundos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Capturas de pantalla</h2>
+        <div class="oe_span12">
+            <div class="oe_demo oe_picture oe_screenshot oe_mb32">
+                <img src="main_3.png" alt="Vista Kanban - una tarjeta de configuración por usuario">
+            </div>
+            <div class="oe_demo oe_picture oe_screenshot oe_mb32">
+                <img src="main_1.png" alt="Formulario de configuración del usuario - cabecera y opciones globales">
+            </div>
+            <div class="oe_demo oe_picture oe_screenshot oe_mb32">
+                <img src="main_2.png" alt="Visibilidad y permisos CRUD por menú en una tabla jerárquica">
+            </div>
+            <div class="oe_demo oe_picture oe_screenshot oe_mb32">
+                <img src="main_4.png" alt="Permisos independientes - Facturas vs Notas de Crédito controladas por separado">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Casos de uso comunes</h2>
+        <div class="oe_span12 oe_mt32">
+            <ul style="font-size: 15px; line-height: 2;">
+                <li><b>Vendedor</b> que puede ver Cotizaciones pero no crearlas ni eliminarlas.</li>
+                <li><b>Contador</b> que ve Facturas pero no tiene acceso a Notas de Crédito.</li>
+                <li><b>Operario de almacén</b> que trabaja con Albaranes pero nunca ve el menú de Clientes.</li>
+                <li><b>Gerente</b> que revisa todos los pedidos pero no puede eliminar ningún registro.</li>
+                <li><b>Agente de soporte</b> restringido a sus propios tickets mediante el filtro Solo Mis Documentos.</li>
+                <li>Cualquier perfil de acceso personalizado — sin Python ni nuevos grupos de seguridad.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Cómo funciona</h2>
+        <div class="oe_span12 text-justify oe_mt32">
+            <p style="font-size: 15px; line-height: 1.8;">
+                El módulo sobreescribe <code>get_views()</code> en el modelo base de Odoo para modificar la arquitectura
+                XML de la vista <b>en memoria</b> antes de que llegue al navegador. Ajusta dinámicamente los atributos
+                <code>create</code>, <code>edit</code>, <code>delete</code>, <code>duplicate</code> e <code>import</code>
+                según la configuración guardada del usuario. No se modifica ningún registro de vista en la base de datos
+                — cada ajuste se calcula por petición y es completamente invisible para los demás usuarios.
+            </p>
+            <p style="font-size: 15px; line-height: 1.8;">
+                La identificación de menús se apoya en <code>options.action_id</code>, siempre presente en Odoo 18 al
+                cargar una vista desde una entrada de menú. Esto garantiza que los menús que comparten el mismo modelo
+                (<em>Cotizaciones vs. Pedidos de Venta</em>, <em>Facturas vs. Notas de Crédito</em>) se traten siempre
+                como entradas totalmente independientes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Instalación e inicio rápido</h2>
+        <div class="oe_span12 oe_mt32">
+            <ol style="font-size: 15px; line-height: 2.2;">
+                <li>Instala el módulo desde <b>Aplicaciones</b>.</li>
+                <li>Ve a <b>Visibilidad de Usuario → Configuración de Usuarios</b> y haz clic en <em>Nuevo</em>.</li>
+                <li>Selecciona el usuario y haz clic en <b>⚡ Cargar Todos los Menús</b> (solo admin) para importar la lista completa en un clic.</li>
+                <li>Activa/desactiva la visibilidad y los permisos de cada fila de menú según necesites.</li>
+                <li>Guarda — los cambios surten efecto de inmediato para el usuario configurado.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12 text-center">
+            <h2 class="oe_slogan" style="color:#875A7B;">Desarrollado por Consultores Odoo Colombia</h2>
+            <div class="oe_mt32">
+                <img src="icon.png" style="width: 100px; height: auto; border-radius: 8px;" alt="Consultores Odoo Colombia">
+            </div>
+            <p class="oe_mt16" style="font-size: 15px;">
+                Soluciones profesionales de Odoo para tu negocio.<br/>
+                <a href="https://consultoresodoocolombia.odoo.com">consultoresodoocolombia.odoo.com</a> &middot;
+                <a href="mailto:siteco@outlook.com">siteco@outlook.com</a>
+            </p>
+        </div>
+    </div>
+</section>
